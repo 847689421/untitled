@@ -7,7 +7,11 @@ group = "org.example"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
+//    mavenCentral()
+    maven(url="https://1maven.aliyun.com/nexus/content/groups/public")
+    maven {
+        setUrl("https://1maven.aliyun.com/nexus/content/groups/public")
+    }
 }
 
 dependencies {
